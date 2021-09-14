@@ -25,3 +25,34 @@ code {
     'Courier New',
     monospace;
 }
+
+.Calculator {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: repeat(6, 1fr);
+  border: 1px solid #282c34;
+  width: 500px;
+  gap: 1px;
+}
+
+.input {
+  grid-column: span 4;
+  background-color: #858693;
+  justify-content: flex-end;
+}
+
+.zero {
+  grid-column: span 2;
+}
+
+span {
+  display: flex;
+  height: 3rem;
+  align-items: center;
+  justify-content: center;
+  background-color: #e0e0e0;
+}
+
+.orange {
+  background-color: #f5913e;
+}
