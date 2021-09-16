@@ -55,4 +55,15 @@ span {
 
 .orange {
   background-color: #f5913e;
+  border: 1px solid black;
+}
+
+.orange:hover {
+  background-color: #fc7d15;
+  border: 1px solid rgb(155, 155, 155);
+}
+
+.orange:active {
+  background-color: #ffad6a;
+  border: 1px solid rgb(0, 0, 0);
 }
