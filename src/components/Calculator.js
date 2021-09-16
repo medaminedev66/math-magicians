@@ -2,21 +2,25 @@ import React, { useState } from 'react';
 import calculate from '../logic/calculate';
 
 const Calculator = () => {
-  const [obj, setResult] = useState({});
+  const [obj, setResult] = useState({ total: 0, next: null, operation: null });
 
   const showResult = (e) => {
-    setResult((obj) => calculate(obj, e.target.value));
+    setResult(calculate(obj, e.target.value));
   };
 
-  let result = 0;
-  if (obj !== null) {
-    if (obj.next !== null) {
-      result = obj.next;
-    } else result = obj.total;
+  let { total, operation, next } = obj;
+  if (!operation) {
+    operation = '';
+  }
+  if (!next) {
+    next = '';
+  }
+  if (!total && total !== 0) {
+    total = '';
   }
   return (
     <div className="Calculator">
-      <span className="input">{result}</span>
+      <span className="input">{`${total} ${operation} ${next}`}</span>
       <button type="button" value="AC" className="char" onClick={showResult}>
         AC
       </button>

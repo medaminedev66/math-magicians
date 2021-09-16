@@ -12,11 +12,19 @@ export default function operate(numberOne, numberTwo, operation) {
   if (operation === 'x') {
     return one.times(two).toString();
   }
-  if (operation === '÷') {
-    return one.div(two).toString();
+  try {
+    if (operation === '÷') {
+      // if ((numberTwo === '0' && numberOne === '0') || numberTwo === '0') {
+      //   return 'ERROR';
+      // }
+      return one.div(two).toString();
+    }
+    if (operation === '%') {
+      return one.mod(two).toString();
+    }
+  } catch (error) {
+    return 'error';
   }
-  if (operation === '%') {
-    return one.mod(two).toString();
-  }
+
   throw Error(`Unknown operation '${operation}'`);
 }

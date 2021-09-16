@@ -15,9 +15,9 @@ function isNumber(item) {
  *   operation:String  +, -, etc.
  */
 export default function calculate(obj, buttonName) {
-  if (buttonName === 'AC') {
+  if (buttonName === 'AC' || Number.isNaN(Number(obj.total))) {
     return {
-      total: null,
+      total: 0,
       next: null,
       operation: null,
     };
@@ -75,7 +75,7 @@ export default function calculate(obj, buttonName) {
       };
     }
     // '=' with no operation, nothing to do
-    return {};
+    return { next: obj.next };
   }
 
   if (buttonName === '+/-') {
