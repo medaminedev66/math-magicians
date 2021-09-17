@@ -30,15 +30,17 @@ code {
   display: grid;
   grid-template-columns: auto auto auto auto;
   grid-template-rows: repeat(6, 1fr);
-  border: 1px solid #282c34;
   width: 500px;
   gap: 1px;
+  padding: 1rem;
 }
 
 .input {
   grid-column: span 4;
   background-color: #858693;
   justify-content: flex-end;
+  padding: 0 0.5rem;
+  border: 1px solid rgb(51, 51, 51);
 }
 
 .zero {
@@ -55,7 +57,7 @@ span {
 
 .orange {
   background-color: #f5913e;
-  border: 1px solid black;
+  border: 1px solid rgb(83, 83, 83);
 }
 
 .orange:hover {
@@ -65,5 +67,5 @@ span {
 
 .orange:active {
   background-color: #ffad6a;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px solid rgb(92, 92, 92);
 }
