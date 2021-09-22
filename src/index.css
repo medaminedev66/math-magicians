@@ -1,28 +1,14 @@
 body {
   margin: 0;
-  font-family:
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    'Roboto',
-    'Oxygen',
-    'Ubuntu',
-    'Cantarell',
-    'Fira Sans',
-    'Droid Sans',
-    'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family:
-    source-code-pro,
-    Menlo,
-    Monaco,
-    Consolas,
-    'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
 
@@ -68,4 +54,42 @@ span {
 .orange:active {
   background-color: #ffad6a;
   border: 1px solid rgb(92, 92, 92);
+}
+
+.header {
+  padding: 0.5rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+}
+
+.nav li {
+  margin-right: 0.5rem;
+  border-right: 1px solid rgb(51, 51, 51);
+  padding-right: 0.5rem;
+}
+
+.active-link {
+  text-decoration: none;
+  font-size: 16px;
+  color: inherit;
+}
+
+.App {
+  padding: 0 2rem;
+}
+
+.calculator-page {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 5rem;
+}
+
+.Quote {
+  margin-top: 5rem;
 }
