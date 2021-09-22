@@ -1,15 +1,15 @@
-body {
+* {
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  line-height: 1.4;
+  color: #444;
+  background: #fff;
+  height: 100vh;
 }
 
 .Calculator {
@@ -23,7 +23,7 @@ code {
 
 .input {
   grid-column: span 4;
-  background-color: #858693;
+  background-color: #d0d1d8;
   justify-content: flex-end;
   padding: 0 0.5rem;
   border: 1px solid rgb(51, 51, 51);
@@ -87,9 +87,14 @@ span {
 .calculator-page {
   display: flex;
   justify-content: space-between;
-  margin: 0 5rem;
+  margin: 5rem;
 }
 
 .Quote {
   margin-top: 5rem;
+}
+
+.about {
+  margin-top: 5rem;
+  font-size: x-large;
 }

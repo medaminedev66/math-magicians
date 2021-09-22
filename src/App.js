@@ -3,6 +3,7 @@ import { Route, Switch } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import Quote from './pages/Quote';
 import Header from './components/Header';
+import Home from './pages/Home';
 
 export default class App extends React.Component {
   constructor(props) {
@@ -25,13 +26,7 @@ export default class App extends React.Component {
             <Quote />
           </Route>
           <Route path="/">
-            <div className="about">
-              <p>
-                &quot;Math magicians&quot; is a website for all fans of
-                mathematics. It is a Single Page App (SPA) that allows users to:
-                Make simple calculations. Read a random math-related quote.
-              </p>
-            </div>
+            <Home />
           </Route>
           <Route path="*">
             <h3>No match for this page</h3>
