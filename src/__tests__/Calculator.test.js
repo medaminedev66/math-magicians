@@ -22,7 +22,6 @@ describe('Test Calculator component', () => {
 
   it('makes an operation ', () => {
     const { getByText, queryByTitle } = render(<Calculator />);
-    // expect(screen.getByDisplayValue('')).toContainHTML('5');
     fireEvent.click(getByText('8'));
     fireEvent.click(getByText('+'));
     fireEvent.click(getByText('4'));
