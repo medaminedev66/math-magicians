@@ -6,6 +6,7 @@ test('Calculate an operation', () => {
     next: 3,
     operation: '+',
   };
+  
   const operation = '=';
   expect(calculate(obj, operation)).toEqual({
     next: null,
