@@ -20,7 +20,9 @@ const Calculator = () => {
   }
   return (
     <div className="Calculator">
-      <span className="input">{`${total} ${operation} ${next}`}</span>
+      <span className="input" title="input">
+        {`${total} ${operation} ${next}`}
+      </span>
       <button type="button" value="AC" className="char" onClick={showResult}>
         AC
       </button>

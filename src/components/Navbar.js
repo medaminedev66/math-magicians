@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav>
       <ul className="nav">
         {links.map((link) => (
-          <li key={link.id}>
+          <li key={link.id} data-testid={link.id}>
             <NavLink to={link.path} className="active-link">
               {link.text}
             </NavLink>
