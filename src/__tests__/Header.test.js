@@ -5,16 +5,6 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import Header from '../components/Header';
 
 describe('test the Quote components', () => {
-  it('renders without errors', () => {
-    const root = document.createElement('div');
-    ReactDOM.render(
-      <Router>
-        <Header />
-      </Router>,
-      root,
-    );
-  });
-
   it('matches the snapshot', () => {
     const tree = renderer
       .create(
