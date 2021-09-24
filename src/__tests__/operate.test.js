@@ -8,10 +8,16 @@ test('calculate the deduction of 2 numbers', () => {
   expect(operate(10, 4, '-')).toBe('6');
 });
 
-test('calculate the deduction of 2 numbers', () => {
-  expect(operate(10, 4, '-')).toBe('6');
+test('% operation', () => {
+  expect(operate(10, 4, '%')).toBe('2');
 });
 
-test('calculate the deduction of 2 numbers', () => {
-  expect(operate(2, 4, 'x')).toBe('8');
+describe('÷ operation', () => {
+  test('divided by number greater than 0', () => {
+    expect(operate(10, 5, '÷')).toBe('2');
+  });
+
+  test('divided by 0', () => {
+    expect(operate(10, 0, '÷')).toBe('error');
+  });
 });
